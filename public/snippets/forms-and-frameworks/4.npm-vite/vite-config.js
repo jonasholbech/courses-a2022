@@ -1,14 +1,15 @@
 // vite.config.js
-const { resolve } = require("path");
+import { resolve } from "path";
+import { defineConfig } from "vite";
 
-module.exports = {
-  base: "./", //set base here or in the build command
+export default defineConfig({
+  base: "./",
   build: {
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        sub: resolve(__dirname, "sub.html"),
+        nested: resolve(__dirname, "nested/index.html"),
       },
     },
   },
-};
+});
