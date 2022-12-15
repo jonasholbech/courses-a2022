@@ -91,6 +91,10 @@ rect {
   color: #7070ee;
 }
 
+.reveal ul.spaced li,
+.reveal ol.spaced li {
+  margin-bottom: 50px;
+}
 .reveal ul.pills li {
   background: white;
   color: black;
